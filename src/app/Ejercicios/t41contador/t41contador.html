@@ -1,6 +1,41 @@
-<h1>Ejercicio 4.1 - Botones</h1>
 
-<p>¡Mi primer ejercicio funciona!</p>
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Contador</title>
+  </head>
 
-<button>Botón 1</button>
-<button>Botón 2</button>
+  <body>
+
+    <h2>T 4.1 Contador</h2>
+    <hr>
+    <h2>CONTADOR</h2>
+
+    <h2>{{ contador }}</h2>
+
+    <button (click)="decrementar()">
+      -{{ x }}
+    </button>
+
+    <button (click)="resetear()">
+      RESET
+    </button>
+
+    <button (click)="incrementar()">
+      +{{ x }}
+    </button>
+
+    <br><br>
+
+    <label>Valor de X:</label>
+
+    <input
+      type="number"
+      [value]="x"
+      (input)="cambiarX($event)"
+      min="1"
+      >
+  </body>
+</html>
+
+
