@@ -5,29 +5,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
   </head>
 
-  <body class = "container pt-2">
+  <body class = "	container py-4 bg-light">
 
-    <h2>T 4.2 Datos del IES Playamar / Jacaranda</h2>
+    <h2 class = "text-primary fw-bold mb-3">T 4.2 Datos del IES Playamar / Jacaranda</h2>
     <hr>
-    <h2>DATOS DE CENTROS EDUCATIVOS</h2>
-    <dl>
-      <td>Centro Educativo:</td>
-      <dd>{{centroEducativo}}</dd>
+    <h2 class = "text-dark fw-semibold mb-4">DATOS DE CENTROS EDUCATIVOS</h2>
+    <dl class = "row bg-white p-4 rounded shadow-sm">
+      <td class = "col-12 fw-bold text-primary">Centro Educativo:</td>
+      <dd class = "col-12 mb-3 ps-3 text-secondary">{{centroEducativo}}</dd>
 
-      <td>Localidad:</td>
-      <dd>{{Localidad}}</dd>
+      <td class = "col-12 fw-bold text-primary">Localidad:</td>
+      <dd class = "col-12 mb-3 ps-3 text-secondary">{{Localidad}}</dd>
 
-      <td>Familias Profesionales:</td>
-      <dd>{{familiaProfecional}}</dd>
+      <td class = "col-12 fw-bold text-primary">Familias Profesionales:</td>
+      <dd class = "col-12 mb-3 ps-3 text-secondary">{{familiaProfecional}}</dd>
 
-      <td>CENTRO:</td>
-      <dd>{{centro}}</dd>
+      <td class = "col-12 fw-bold text-primary">CENTRO:</td>
+      <dd class = "col-12 mb-3 ps-3 text-secondary">{{centro}}</dd>
 
-      <td>Logo:</td>
-      <dd><img [src]="logo" width="200"></dd>
+      <td class = "col-12 fw-bold text-primary">Logo:</td>
+      <dd><img [src]="logo" width="200" class = "img-fluid rounded shadow-sm border"></dd>
     </dl>
 
-    <button (click)="cambiarCentro()">
+    <button (click)="cambiarCentro()" class="btn btn-primary btn-lg rounded-pill shadow-sm mt-3 px-4">
       Cambiar centro
     </button>
 
