@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-heroe',
-  templateUrl: './heroe.component.html',
-  styleUrls: ['./heroe.component.css'
-  ]
+  selector: 'app-hero',
+  standalone: false,
+  templateUrl: './heroe.component.html'
 })
-export class HeroeComponent {
-
-}
+export class HeroeComponent {}

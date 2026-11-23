@@ -12,7 +12,8 @@ import { HeroesModule } from './Ejercicios/T44ModuloHeroes/heroes.module';
     BrowserModule,
     HeroesModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
-export class AppModule { }
+export class AppModule {}
